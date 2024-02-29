@@ -1,9 +1,5 @@
-<h1>Articles#index</h1>
-<p>Find me in app/views/articles/index.html.erb</p>
-
-<div>
-    <%= ENV['DB_USERNAME'] %>
-</div>
+<h1>Pages#home</h1>
+<p>Find me in app/views/pages/home.html.erb</p>
 
 <% if current_user %>
     <p>Hello <%= current_user&.email %></p><br>
@@ -16,11 +12,4 @@
          <%= link_to "Login", new_user_session_path %>
        </p>
 <% end %>
-
-<ul>
-    <% @articles.each do |article| %>
-        <li>
-            <%= article.title %>
-        </li>
-    <% end %>
-</ul>
+11. Generate the Devise views for customization:
